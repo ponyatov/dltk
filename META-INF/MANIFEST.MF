@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OctaveEditor
+Bundle-SymbolicName: OctaveEditor
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: org.dworks
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
