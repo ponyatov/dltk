@@ -2,6 +2,8 @@ plugin.xml
 
    <editor
       contributorClass="org.dworks.octaveide.actions.OctaveActionContributor"
+		class="org.dworks.octaveide.editor.OctaveEditor"
+		class="org.eclipse.ui.editors.text.TextEditor"
 		extensions=""
    >
    </editor>
@@ -11,3 +13,17 @@ plugin.xml
       >       
    </content-type>
 </extension>
+
+
+ <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension targetID="org.dworks.octaveide.perspective">
+         <view
+               id="org.eclipse.ui.views.TaskList"
+               relationship="stack"
+               relative="top"/>
+         <view
+               id="org.eclipse.ui.views.BookmarkView"
+               relationship="stack"
+               relative="right"/>
+      

@@ -1,8 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: OctaveEditor
+Bundle-Name: %pluginName
 Bundle-SymbolicName: OctaveEditor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: org.dworks
+Bundle-Vendor: %providerName
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui.editors,
+ org.eclipse.ui.workbench

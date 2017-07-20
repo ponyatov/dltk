@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
 
+<extension point="org.eclipse.ui.perspectives">
+<perspective
+	id="org.dworks.octaveide.perspective"
+	class="org.dworks.octaveide.perspective.OctavePerspective"
+	name="Octave"
+	icon="%icon"/>
+ </extension>
+ 
+ <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension targetID="org.dworks.octaveide.perspective">
+         <view
+               id="org.eclipse.ui.views.ResourceNavigator"
+               relationship="stack"
+               relative="left"/>
+         <view
+               id="org.eclipse.ui.Console"
+               relationship="stack"
+               relative="bottom"/>
+         <view
+               id="org.eclipse.ui.views.ProblemView"
+               relationship="stack"
+               relative="right"/>
+      </perspectiveExtension>
+   </extension>
+
    <extension point="org.eclipse.ui.editors">
    
    <editor
 		id="org.dworks.octaveide.editor.OctaveEditor"
 		class="org.dworks.octaveide.editor.OctaveEditor"
-		icon="icons/octave.png"
+		icon="%icon"
 		extensions="m,oct,octave"
 		default="true"
 		name="%OctaveEditor.name">
