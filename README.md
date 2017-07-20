@@ -9,5 +9,5 @@ github: https://github.com/ponyatov/dltk
 
 ### IBM 
 
-https://www.ibm.com/developerworks/ru/edu/os-eclipse-octave/index.html
+[Создание интегрированной среды разработки для Perl, Python и PHP на базе Eclipse](https://www.ibm.com/developerworks/ru/edu/os-eclipse-octave/index.html)
 
