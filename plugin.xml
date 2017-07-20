@@ -8,8 +8,9 @@
 		class="org.dworks.octaveide.editor.OctaveEditor"
 		extensions="m,oct,octave"
 		icon="icons/octave.png"
-		name="Octave Editor"
-   />
+		name="%OctaveEditor.name">
+   <contentTypeBinding/> 	
+   </editor>
    
    </extension>
 
