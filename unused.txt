@@ -26,4 +26,8 @@ plugin.xml
                id="org.eclipse.ui.views.BookmarkView"
                relationship="stack"
                relative="right"/>
+         <view
+               id="org.eclipse.ui.Console"
+               relationship="stack"
+               relative="bottom"/>
       

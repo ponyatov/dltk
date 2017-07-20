@@ -17,13 +17,9 @@
                relationship="stack"
                relative="left"/>
          <view
-               id="org.eclipse.ui.Console"
-               relationship="stack"
-               relative="bottom"/>
-         <view
                id="org.eclipse.ui.views.ProblemView"
                relationship="stack"
-               relative="right"/>
+               relative="problem"/>
       </perspectiveExtension>
    </extension>
 
