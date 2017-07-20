@@ -2,10 +2,12 @@ plugin.xml
 
    <editor
       contributorClass="org.dworks.octaveide.actions.OctaveActionContributor"
-      default="true"
+		extensions=""
    >
-
-      <contentTypeBinding
-         contentTypeId="org.dworks.octaveide.octaveContentType">
-      </contentTypeBinding>
    </editor>
+
+<extension point="org.eclipse.core.runtime.contentTypes">
+      file-extensions="m,oct,octave"
+      >       
+   </content-type>
+</extension>

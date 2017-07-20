@@ -6,12 +6,22 @@
    <editor
 		id="org.dworks.octaveide.editor.OctaveEditor"
 		class="org.dworks.octaveide.editor.OctaveEditor"
-		extensions="m,oct,octave"
 		icon="icons/octave.png"
+		extensions="m,oct,octave"
+		default="true"
 		name="%OctaveEditor.name">
-   <contentTypeBinding/> 	
+   <contentTypeBinding contentTypeId="org.dworks.octaveide.octaveContentType"/> 	
    </editor>
    
+   </extension>
+   
+   <extension point="org.eclipse.core.runtime.contentTypes">
+   <content-type
+      id="org.dworks.octaveide.octaveContentType"
+      base-type="org.eclipse.core.runtime.text"
+      name="%octaveContentType"
+      priority="high"
+   />   
    </extension>
 
 </plugin>
