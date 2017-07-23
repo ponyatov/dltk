@@ -1,5 +1,5 @@
 package org.dworks.octaveide.editor;
 
-public class OctaveEditor { // implements ScriptEditor {
+// public class OctaveEditor {
 
-}
+// }

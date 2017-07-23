@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
 
+<extension point="org.eclipse.core.resources.natures">
+<runtime>
+<run class="org.dworks.octaveide.OctaveNature"/>
+</runtime>
+</extension>
+
 <extension point="org.eclipse.ui.perspectives">
 <perspective
 	id="org.dworks.octaveide.perspective"
@@ -56,5 +62,16 @@
       priority="high"
    />   
    </extension>
+
+<!-- FLTK -->
+
+<extension point="org.eclipse.core.filebuffers.documentSetup">
+   id="org.dworks.octaveide.editor.OctaveDocumentSetup"
+   name="documentSetupName"
+   <participant
+      extensions="m"
+      class="org.dworks.octaveide.editor.OctaveDocumentSetup">
+   </participant>
+</extension>
 
 </plugin>
