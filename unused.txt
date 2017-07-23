@@ -30,4 +30,6 @@ plugin.xml
                id="org.eclipse.ui.Console"
                relationship="stack"
                relative="bottom"/>
+
+               relative="org.eclipse.ui.console.ConsoleView"/>
       

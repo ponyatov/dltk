@@ -9,7 +9,7 @@ public class OctavePerspective implements IPerspectiveFactory {
 
 	@Override
 	public void createInitialLayout(IPageLayout layout) {
-        layout.createFolder("left", IPageLayout.LEFT, 0.2f, IPageLayout.ID_EDITOR_AREA);;
+        layout.createFolder("left", IPageLayout.LEFT, 0.25f, IPageLayout.ID_EDITOR_AREA);;
         layout.createFolder("problem", IPageLayout.RIGHT, 0.8f, IPageLayout.ID_PROBLEM_VIEW);;
         layout.createFolder("top", IPageLayout.TOP, 0.5f, IPageLayout.ID_EDITOR_AREA);;
         IFolderLayout console = layout.createFolder("bottom", IPageLayout.BOTTOM, 0.6f, IPageLayout.ID_EDITOR_AREA);
