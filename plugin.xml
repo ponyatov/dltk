@@ -11,7 +11,7 @@
  
  <extension point="org.eclipse.ui.views">
  <view
- 	id="org.dworks.octaveide.localTerminalView"
+ 	   id="org.dworks.octaveide.TerminalView"
  	class="org.dworks.octaveide.TerminalView"
  	name="Terminal"
  />
@@ -36,9 +36,8 @@
    </extension>
 
    <extension point="org.eclipse.ui.editors">
-   
    <editor
-		id="org.dworks.octaveide.editor.OctaveEditor"
+		   id="org.dworks.octaveide.editor.OctaveEditor"
 		class="org.dworks.octaveide.editor.OctaveEditor"
 		icon="%icon"
 		extensions="m,oct,octave"
@@ -46,7 +45,6 @@
 		name="%OctaveEditor.name">
    <contentTypeBinding contentTypeId="org.dworks.octaveide.octaveContentType"/> 	
    </editor>
-   
    </extension>
    
    <extension point="org.eclipse.core.runtime.contentTypes">
@@ -54,6 +52,7 @@
       id="org.dworks.octaveide.octaveContentType"
       base-type="org.eclipse.core.runtime.text"
       name="%octaveContentType"
+      file-extensions="m,oct,octave"
       priority="high"
    />   
    </extension>
